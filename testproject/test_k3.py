@@ -2,6 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import InvalidSessionIdException
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 options = Options()
