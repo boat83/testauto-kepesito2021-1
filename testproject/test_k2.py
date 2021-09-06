@@ -23,8 +23,8 @@ print(color_list)
 
 def test_buttons():
     # Tc2: El lehet indítani a játékot a start gommbal. Ha elindult a játék akkor a stop gombbal le lehet állítani.
-    assert start_button.is_enabled() == True and stop_button.is_enabled() == True
-
+    assert start_button.is_enabled() == True
+    assert stop_button.is_enabled() == True
 
 
 def start_stop():
@@ -37,5 +37,5 @@ def start_stop():
     else:
         print('nem ok')
 time.sleep(3)
-start_stop()
+test_buttons()
 driver.close()
